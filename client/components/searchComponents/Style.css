@@ -1,0 +1,28 @@
+
+
+  .Card-action {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Card-action-outer {
+
+    display: flex;
+    flex-direction: row;
+    /* float: right; */
+
+  }
+
+  .Search-button{
+    margin-left: 720px;
+  }
+
+ 
+.AutoComplete-style {
+    text-align:center;
+    margin-top: 50px;
+    margin-right: 300px;
+    margin-bottom: 0px;
+    margin-left: 700px; 
+
+  }

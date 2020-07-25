@@ -1,0 +1,35 @@
+
+
+  .Card-action {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Card-action-outer {
+
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+
+  }
+
+  .Search-button{
+    margin-left: 720px;
+  }
+
+ 
+.AutoComplete-style {
+    text-align:center;
+    margin-top: 50px;
+    margin-right: 300px;
+    margin-bottom: 0px;
+    margin-left: 700px; 
+
+  }
+  .Post-details {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .Posted-Question {
+    margin-left: 10px;
+  }

@@ -1,21 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Search from './components/userComponents/Search';
+import EditQuestion from './components/userComponents/EditQuestion'
+import Login from './components/Login/Login.js';
+import Signup from './components/Signup/Signup.js';
+import Open from './components/OpeningPage';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+//import Search from './components/searchComponents/Search';
+
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <MuiThemeProvider>
+      <Router>
+        <div>
+          {/* <Search/> */}
+          <Switch>
+                                  
+                  <Route exact path = '/' component = {Open}/>
+                  <Route  path="/login" component={Login} />
+                  <Route path = '/signup' component = {Signup}/>
+                  <Route exact path='/EditQuestion' component={EditQuestion} />
+                  <Route exact path='/Search' component={Search} />
+          </Switch>
+        </div>
+      </Router>
+      </MuiThemeProvider>
     );
   }
 }
-
 export default App;
+
